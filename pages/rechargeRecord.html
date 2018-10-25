@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>充值记录</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+<div id="root">
+    <div class="container b_fff female">
+        <header class="header_v3">
+            <div class="header_top">
+                <p class="wleft">
+                    <img src="../images/public-left-arrows.png" alt="" class="back">
+                </p>
+                <p class="overhidden title">充值记录</p>
+                <div class="wright"></div>
+                <div class="menu-modal-bg ">
+                    <div class="menu-content">
+                        <a href="../index.html">
+                            <i class="icon iconfont icon-shouyedianji i_focus"></i>
+                            <span>首页</span>
+                        </a>
+                        <a href="bookcase.html">
+                            <i class="icon iconfont icon-shujiadianji i_focus"></i>
+                            <span>书架</span>
+                        </a>
+                        <a href="readingHistory.html">
+                            <i class="icon iconfont icon-yuedujiludianji i_focus"></i>
+                            <span>阅读历史</span>
+                        </a>
+                        <a href="bookWarehouse.html">
+
+                            <i class="icon iconfont icon-shukudianji i_focus"></i>
+                            <span>书库</span>
+                        </a>
+                        <a href="ranking.html">
+                            <i class="icon iconfont icon-bangdandianji i_focus"></i>
+                            <span>排行榜</span>
+                        </a>
+                        <a href="search.html">
+                            <i class="icon iconfont icon-sousuodianji i_focus"></i>
+                            <span>搜索</span>
+                        </a>
+                        <a href="pay.html">
+                            <i class="icon iconfont icon-chongzhidianji i_focus"></i>
+                            <span>充值</span>
+                        </a>
+                        <a href="personal.html">
+                            <i class="icon iconfont icon-gerenzhongxindianji i_focus"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <ul class="tab_box">
+            <li class="clicked">充值记录</li>
+            <li class="">签到记录</li>
+        </ul>
+        <div class="content" style="">
+            <!--充值记录-->
+            <div class="detail" style="display: block">
+                <!--有数据-->
+                <ul class="recordbox box_ul_p" id="getNode_cz">
+                    <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                        <p class="clearfix"><span class="re_money">50元</span>--<span>未支付</span></p>
+                        <p class="clearfix flex_box flex_col">
+                            <span class="re_time">2018-08-03 11:07:53</span>
+                            <span class="re_name2">5000+3000书币</span>
+                        </p>
+                    </li>
+                    <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                        <p class="clearfix "><span class="re_money">100元</span>--<span>充值成功</span></p>
+                        <p class="clearfix flex_box flex_col">
+                            <span class="re_time">2018-08-03 11:07:53</span>
+                            <span class="re_name2">10000+8000书币</span>
+                        </p>
+                    </li>
+
+                </ul>
+                <!--无数据-->
+                <div class="no_centent" style="display: none">
+                    <img src="../images/no_Data.png" alt="">
+                    <p>奥!当前没有记录</p>
+                </div>
+                <p class="catalog_li load_more">点击加载更多</p>
+            </div>
+            <!--签到记录-->
+            <div class="detail" style="display:none">
+                <!--有数据-->
+                <ul class="recordbox" id="getNode_qd">
+                    <li class="clearfix flex_box flex_bt flex_items_ct line ptb24">
+                        <p class="re_name">签到+40阅读币</p>
+                        <p class="re_attime">2018-08-01 09:09:05</p>
+                    </li>
+                    <li class="clearfix flex_box flex_bt flex_items_ct line ptb24">
+                        <p class="re_name">签到+30阅读币</p>
+                        <p class="re_attime">2018-07-31 17:59:20</p>
+                    </li>
+                </ul>
+                <!--无数据-->
+                <div class="no_centent" style="display: none">
+                    <img src="../images/no_Data.png" alt="">
+                    <p>奥!当前没有记录</p>
+                </div>
+                <p class="catalog_li load_more">点击加载更多</p>
+            </div>
+        </div>
+        <!--加载中-->
+        <div class="loading_jump loading_jump2" style="display: none">
+            <div class="loading_jump1"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/setFont.js"></script>
+<script type="text/javascript" src="../js/rechargeRecord.js"></script>
+</body>
+</html>

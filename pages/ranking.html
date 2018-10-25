@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+<div id="root">
+    <div class="container b_f7 female">
+        <header class="header_v3">
+            <div class="header_top">
+                <p class="wleft">
+                    <img src="../images/public-left-arrows.png" alt="" class="back">
+                </p>
+                <p class="overhidden " style="width: 100%;text-align: center">排行榜</p>
+                <div class="wright"></div>
+                <div class="menu-modal-bg ">
+                    <div class="menu-content">
+                        <a href="../index.html">
+                            <i class="icon iconfont icon-shouyedianji i_focus"></i>
+                            <span>首页</span>
+                        </a>
+                        <a href="bookcase.html">
+                            <i class="icon iconfont icon-shujiadianji i_focus"></i>
+                            <span>书架</span>
+                        </a>
+                        <a href="readingHistory.html">
+                            <i class="icon iconfont icon-yuedujiludianji i_focus"></i>
+                            <span>阅读历史</span>
+                        </a>
+                        <a href="bookWarehouse.html">
+
+                            <i class="icon iconfont icon-shukudianji i_focus"></i>
+                            <span>书库</span>
+                        </a>
+                        <a href="ranking.html">
+                            <i class="icon iconfont icon-bangdandianji i_focus"></i>
+                            <span>排行榜</span>
+                        </a>
+                        <a href="search.html">
+                            <i class="icon iconfont icon-sousuodianji i_focus"></i>
+                            <span>搜索</span>
+                        </a>
+                        <a href="pay.html">
+                            <i class="icon iconfont icon-chongzhidianji i_focus"></i>
+                            <span>充值</span>
+                        </a>
+                        <a href="personal.html">
+                            <i class="icon iconfont icon-gerenzhongxindianji i_focus"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <section style="margin-top: 0.05rem">
+                <div class="am-segment" style="border: none">
+                    <div class="am-segment-item ">
+                        <span>点击榜</span>
+                    </div>
+                    <div class="am-segment-item  ">
+                        <span class="am-segment-item-focus">畅销榜</span>
+                    </div>
+                    <div class="am-segment-item ">
+                        <span>打赏榜</span>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-top: 0">
+                <!--点击榜-->
+                <ul class="clearfix ranking_box pt20" style="display: none;padding-top: .5rem!important;">
+                    <li class="sec_li ">
+                        <a href="bookInfo.html" class="lp_li_a ">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">1</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手1</div>
+                                <div class="Detail">
+                                    他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">2</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">3</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">4</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">5</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">6</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">7</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">8</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">9</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">10</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!--畅销榜-->
+                <ul class="clearfix ranking_box pt20" style="padding-top: .5rem!important;">
+                    <li class="sec_li ">
+                        <a href="bookInfo.html" class="lp_li_a ">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">1</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手2</div>
+                                <div class="Detail">
+                                    他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">2</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">3</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">4</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">5</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">6</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">7</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">8</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">9</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">10</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!--打赏榜-->
+                <ul class="clearfix ranking_box pt20" style="display: none;padding-top: .5rem!important;">
+                    <li class="sec_li ">
+                        <a href="bookInfo.html" class="lp_li_a ">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">1</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手3</div>
+                                <div class="Detail">
+                                    他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">2</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">3</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">4</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">5</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">6</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">7</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">8</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">9</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sec_li">
+                        <a href="bookInfo.html" class="lp_li_a">
+                            <div class="rank_list">
+                                <img src="https://static.youshuge.com/book_img/8XiQqreWJJVXakxjd42M3CsHbLa37STrCFzWwSEq.jpeg"
+                                     alt="" class=" lp_li_imgWrapimg "> <span class="rank_list_bg_r">10</span>
+                            </div>
+                            <div class="title_r">
+                                <div class="lp_li_name">都市顶级高手</div>
+                                <div class="Detail">他受伤回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
+                                    和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
+                                    各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
+                                    且看一代杀神如何纵横都市，泡妞，破除阴谋，成就无上威名，美女全收，走上人生巅峰！
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <span class="c_f50 book_status_border">已完结</span>
+                                        <span class="book_status_border bdc_grey c_999">都市</span>
+                                        <span class="book_status_border bdc_grey c_999">悬疑</span>
+                                        <span class="c_999"><span>422万字</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <p class="catalog_li load_more" style="padding: .5rem 0 1rem 0"></p>
+            </section>
+        </div>
+        <!--底部导航-->
+        <div class="public_nav">
+            <a href="../index.html">
+                <i class="icon iconfont icon-shouye"></i>
+                <span>首页</span>
+            </a>
+            <a href="ranking.html">
+                <i class="icon iconfont icon-bangdandianji i_focus"></i>
+                <span class="c_ff50">榜单</span>
+            </a>
+            <a href="pay.html">
+                <i class="icon iconfont icon-chongzhi1"></i>
+                <span>充值</span>
+            </a>
+            <a href="personal.html">
+                <i class="icon iconfont icon-gerenzhongxin"></i>
+                <span>个人中心</span>
+            </a>
+        </div>
+        <!--加载中-->
+        <div class="loading_jump" style="display: none">
+            <div class="loading_jump1"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/setFont.js"></script>
+<script type="text/javascript" src="../js/ranking.js"></script>
+</body>
+</html>

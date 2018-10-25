@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+<div id="root">
+    <div class="container b_f7 consument_v3 female">
+        <header class="header_v3">
+            <div class="header_top">
+                <p class="wleft">
+                    <img src="../images/public-left-arrows.png" alt="" class="back">
+                </p>
+                <p class="overhidden title">消费记录</p>
+                <div class="wright"></div>
+                <div class="menu-modal-bg ">
+                    <div class="menu-content">
+                        <a href="../index.html">
+                            <i class="icon iconfont icon-shouyedianji i_focus"></i>
+                            <span>首页</span>
+                        </a>
+                        <a href="bookcase.html">
+                            <i class="icon iconfont icon-shujiadianji i_focus"></i>
+                            <span>书架</span>
+                        </a>
+                        <a href="readingHistory.html">
+                            <i class="icon iconfont icon-yuedujiludianji i_focus"></i>
+                            <span>阅读历史</span>
+                        </a>
+                        <a href="bookWarehouse.html">
+
+                            <i class="icon iconfont icon-shukudianji i_focus"></i>
+                            <span>书库</span>
+                        </a>
+                        <a href="ranking.html">
+                            <i class="icon iconfont icon-bangdandianji i_focus"></i>
+                            <span>排行榜</span>
+                        </a>
+                        <a href="search.html">
+                            <i class="icon iconfont icon-sousuodianji i_focus"></i>
+                            <span>搜索</span>
+                        </a>
+                        <a href="pay.html">
+                            <i class="icon iconfont icon-chongzhidianji i_focus"></i>
+                            <span>充值</span>
+                        </a>
+                        <a href="personal.html">
+                            <i class="icon iconfont icon-gerenzhongxindianji i_focus"></i>
+                            <span>个人中心</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content" style="">
+            <section class="mt0">
+                <ul class="tab_box">
+                    <li class="clicked">章节消费</li>
+                    <li class="">全本购买</li>
+                    <li class="">打赏记录</li>
+                </ul>
+                <!--章节消费-->
+                <div class="XFlist" style="display: block">
+                    <!--有数据-->
+                    <ul class="recordbox box_ul_p" id="getNode_zj">
+                        <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                            <p class="clearfix flex_box flex_col">
+                                <span class="re_name2">超凡兵王</span>
+                                <span class="re_name3 overflow">第二十一章：老师许晓晴（五）</span> <span class="re_time">2018-08-03 11:07:53</span>
+                            </p>
+                            <p class="clearfix"><span class="re_money"> - 27阅读币</span></p>
+                        </li>
+                        <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                            <p class="clearfix flex_box flex_col">
+                                <span class="re_name2">超凡兵王</span>
+                                <span class="re_name3 overflow">第二十一章：老师许晓晴（五）</span> <span class="re_time">2018-08-03 11:07:53</span>
+                            </p>
+                            <p class="clearfix"><span class="re_money"> - 27阅读币</span></p>
+                        </li>
+                    </ul>
+                    <!--无数据-->
+                    <div class="no_centent" style="display: none">
+                        <img src="../images/no_Data.png" alt="">
+                        <p>奥!当前没有记录</p>
+                    </div>
+                    <p class="catalog_li load_more" style="padding: 1rem 0;font-size: .32rem">点击加载更多</p>
+                </div>
+                <!--全本购买-->
+                <div class="XFlist" style="display: none">
+                    <!--有数据-->
+                    <ul class="recordbox box_ul_p" id="getNode_qb">
+                        <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                            <p class="clearfix flex_box flex_col">
+                                <span class="re_name2">超凡兵王1</span>
+                                <span class="re_time">2018-08-03 11:07:53</span>
+                            </p>
+                            <p class="clearfix"><span class="re_money"> - 5000阅读币</span></p>
+                        </li>
+                        <li class="clearfix p020 flex_box flex_bt flex_items_ct line">
+                            <p class="clearfix flex_box flex_col">
+                                <span class="re_name2">超凡兵王2</span>
+                                <span class="re_time">2018-08-03 11:07:53</span>
+                            </p>
+                            <p class="clearfix"><span class="re_money"> - 5000阅读币</span></p>
+                        </li>
+                    </ul>
+                    <!--无数据-->
+                    <div class="no_centent" style="display: none">
+                        <img src="../images/no_Data.png" alt="">
+                        <p>奥!当前没有记录</p>
+                    </div>
+                    <p class="catalog_li load_more" style="padding: 1rem 0;font-size: .32rem">点击加载更多</p>
+                </div>
+                <!--打赏记录-->
+                <div class="XFlist" style="display: none">
+                    <ul class="recordbox box_ul_p" id="getNode_ds">
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">蓝色妖姬<img src="../images/award/bluelover.png" alt="">*1</p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">蛋糕<img src="../images/award/cake.png" alt="">*1
+                                </p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">鲜花<img src="../images/award/flower.png" alt="">*1
+                                </p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">香水<img src="../images/award/perfume.png" alt="">*1
+                                </p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">钻戒<img src="../images/award/ring.png" alt="">*1
+                                </p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                        <li class="clearfix flex_box flex_bt flex_items_ct line">
+                            <div class="flex_box flex_col">
+                                <p class="re_name">游艇<img src="../images/award/yacht.png" alt="">*1
+                                </p>
+                                <span class="re_time">2018-08-03 11:06:16</span>
+                            </div>
+                            <p class="re_info fr"><span class="re_money">- 99阅读币</span></p>
+                        </li>
+                    </ul>
+                    <!--无数据-->
+                    <div class="no_centent" style="display: none">
+                        <img src="../images/no_Data.png" alt="">
+                        <p>奥!当前没有记录</p>
+                    </div>
+                    <p class="catalog_li load_more" style="padding: 1rem 0;font-size: .32rem">点击加载更多</p>
+                </div>
+            </section>
+        </div>
+        <!--加载中-->
+        <div class="loading_jump loading_jump2" style="display: none">
+            <div class="loading_jump1"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/setFont.js"></script>
+<script type="text/javascript" src="../js/consumeList.js"></script>
+</body>
+</html>
